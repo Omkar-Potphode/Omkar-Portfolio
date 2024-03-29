@@ -38,7 +38,7 @@ html{
 
   .shadow-button-color{
     --tw-shadow-color: #4305ba;
-    --tw-shadow: var(--tw-shadow-color);
+    --tw-shadow: var(--tw-shadow-colored);
   }
 
   .text-button-color{
