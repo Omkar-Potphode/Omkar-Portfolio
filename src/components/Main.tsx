@@ -37,6 +37,7 @@ const Main: React.FC = () => {
                     </li>
 
                 </ul>
+            </div>
 
                 <div className='flex-col flex-1 order-1 col-span-4 md:order-none'>
                     <div className='mt-20 container max-w-full mx-auto 2xl:max-w-6xl'>
@@ -52,7 +53,6 @@ const Main: React.FC = () => {
                         📍 Based in Thane, India
                     </p>
                 </div>
-            </div>
         </div>
     </div>
     </>
