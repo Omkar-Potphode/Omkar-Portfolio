@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { SiGmail } from 'react-icons/si'
+import About from './About';
 
 const Main: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const Main: React.FC = () => {
                         </a>
                     </li>
                     <li className='transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1'>
-                        <a href='https://www.linkedin.com/in/omkar-potphode-497b63237/' target='_blank'>
+                        <a href='https://twitter.com/OmkarP33836' target='_blank'>
                             <FaXTwitter className='w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin
                             md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300'/>
                         </a>
@@ -36,6 +37,13 @@ const Main: React.FC = () => {
                     </li>
 
                 </ul>
+
+                <div className='flex-col flex-1 order-1 col-span-4 md:order-none'>
+                    <div className='mt-20 container max-w-full mx-auto 2xl:max-w-6xl'>
+                        <About/>
+                    </div>
+
+                </div>
 
                 <div className='flex-col flex-1 order-1 col-span-4 md:order-none'></div>
                 <div className='relative flex-initial order-2 hidden col-span-1 text-center md:flex md:order-none'>
