@@ -4,6 +4,7 @@ import { SiGmail } from 'react-icons/si'
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Footer from './Footer';
 
 const Main: React.FC = () => {
   return (

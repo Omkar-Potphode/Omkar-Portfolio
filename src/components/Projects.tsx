@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa6';
 import { LuExternalLink } from 'react-icons/lu';
 import AdminImg from '../assets/images/Admin-Panel.png';
 import NotesImg from '../assets/images/notes-app.png';
+import QuizImg from '../assets/images/Quiz-game.png';
 
 const Projects: React.FC = () => {
   return (
@@ -142,6 +143,18 @@ const Projects: React.FC = () => {
                                 </span>
                             </a>
                         </div>
+                    </div>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://quiz-game-xi-gilt.vercel.app/'
+                        target='_blank'
+                        >
+                            <img
+                            src={QuizImg}
+                            alt='Quiz App'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
                     </div>
                 </div>
 
