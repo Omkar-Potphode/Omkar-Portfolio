@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { SiGmail } from 'react-icons/si'
 import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 
 const Main: React.FC = () => {
   return (
@@ -44,6 +45,7 @@ const Main: React.FC = () => {
                     <div className='mt-20 container max-w-full mx-auto 2xl:max-w-6xl'>
                         <About/>
                         <Skills/>
+                        <Projects/>
                     </div>
 
                 </div>
