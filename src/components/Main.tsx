@@ -47,6 +47,7 @@ const Main: React.FC = () => {
                         <About/>
                         <Skills/>
                         <Projects/>
+                        <Footer/>
                     </div>
 
                 </div>

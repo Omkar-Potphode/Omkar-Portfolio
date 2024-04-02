@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
         <div className='max-w-5xl'>
             <div className='relative flex items-center py-5 transition-all duration-500 translate-y-0 opacity-1 blur-0 motion-reduce:transition-none'>
                 <h1 className='pr-2 text-3xl font-bold'>
-                    🥷 Skills and Technologies
+                    💻 Projects and Work
                 </h1>
                 <div className='flex-grow border-t border-black dark:border-white border-1'></div>
                 <a href='https://github.com/Omkar-Potphode'
