@@ -5,7 +5,7 @@ import { IoStar } from 'react-icons/io5'
 const Footer: React.FC = () => {
   return (
     <>
-    <footer className=' ml-40 mb-5 max-w-5xl'>
+    <footer>
 
         <div className='flex-grow border-t border-black dark:border-white border-1'></div>
         <div className='flex flex-col md:flex-row items-center justify-between mt-10 mb-10'>

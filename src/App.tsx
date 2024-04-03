@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import {Loading, Main, Navbar} from './components'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -38,6 +40,7 @@ function App() {
           <>
             <Navbar/>
             <Main/>
+            <ToastContainer/>
           </>
         )}
       </div>

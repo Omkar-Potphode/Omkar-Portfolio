@@ -5,6 +5,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Footer from './Footer';
+import Contact from './Contact';
 
 const Main: React.FC = () => {
   return (
@@ -43,10 +44,11 @@ const Main: React.FC = () => {
             </div>
 
                 <div className='flex-col flex-1 order-1 col-span-4 md:order-none'>
-                    <div className='mt-20 container max-w-full mx-auto 2xl:max-w-6xl'>
+                    <div className='mt-20 container max-w-5xl mx-auto 2xl:max-w-6xl'>
                         <About/>
                         <Skills/>
                         <Projects/>
+                        <Contact/>
                         <Footer/>
                     </div>
 
