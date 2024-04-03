@@ -24,6 +24,7 @@ const Skills: React.FC = () => {
             <motion.div className='flex flex-wrap justify-between mt-8 text-sm font-medium text-black md:text-lg'>
                 {techStack.map((tech, index) => (
                     <motion.div 
+                    key={index}
                     initial="hidden"
                     whileInView={"visible"}
                     variants={{

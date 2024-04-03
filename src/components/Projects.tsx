@@ -8,7 +8,7 @@ import QuizImg from '../assets/images/Quiz-game.png';
 const Projects: React.FC = () => {
   return (
     <>
-    <section id='skills' className='w-full min-h-screen flex justify-center mt-10 mb-5'>
+    <section id='work' className='w-full min-h-screen flex justify-center mt-10 mb-5'>
 
         <div className='max-w-5xl'>
             <div className='relative flex items-center py-5 transition-all duration-500 translate-y-0 opacity-1 blur-0 motion-reduce:transition-none'>

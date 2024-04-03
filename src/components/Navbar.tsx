@@ -51,7 +51,9 @@ const Navbar: React.FC = () => {
         <div className={`flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-slate-900 backdrop-blur-sm transition-shadow duration-300
         ${scrollingDown ? "dark:bg-slate-900/[0.8] shadow-lg" : ""}`}
         >
-            <a href='#' onClick={() => setActiveNav("#")}>
+            <a href='#' 
+            onClick={() => setActiveNav("#")}
+            >
                 <div className='transition-all duration-500 motion-reduce:transition-none opacity-1 blur-0'>
                     <div>
                         <div className='flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg 
@@ -86,14 +88,18 @@ const Navbar: React.FC = () => {
                     <li className='transition-all motion-reduce:transition-none duration-500 delay-[50ms] translate-y-0 opacity-1'>
                         <a href='#about'
                         onClick={() => setActiveNav("#about")}
-                        className='block py-2 pl-3 pr-4 router-link-active router-link-exact-active hover:text-[#4305ba]'>
+                        className={`block py-2 pl-3 pr-4 router-link-active router-link-exact-active hover:text-[#4305ba] ${
+                            activeNav === "#about" ? "text-[#4305ba]" : ""
+                        }`}>
                             About Me
                         </a>
                     </li>
                     <li className='transition-all motion-reduce:transition-none duration-500 delay-[100ms] translate-y-0 opacity-1'>
                         <a href='#skills'
                         onClick={() => setActiveNav("#skills")}
-                        className='router-link-active router-link-exact-active block py-2 pl-3 pr-4 hover:text-[#4305ba]'
+                        className={`block py-2 pl-3 pr-4 router-link-active router-link-exact-active hover:text-[#4305ba] ${
+                            activeNav === "#skills" ? "text-[#4305ba]" : ""
+                        }`}
                         >
                             Skills
                         </a>
@@ -101,13 +107,18 @@ const Navbar: React.FC = () => {
                     <li className='transition-all motion-reduce:transition-none duration-500 delay-[150ms] translate-y-0 opacity-1'>
                         <a href='#work'
                         onClick={() => setActiveNav("#work")}
-                        className='router-link-active router-link-exact-active block py-2 pl-3 pr-4 hover:text-[#4305ba]'>
+                        className={`block py-2 pl-3 pr-4 router-link-active router-link-exact-active hover:text-[#4305ba] ${
+                            activeNav === "#work" ? "text-[#4305ba]" : ""
+                        }`}
+                        >
                             Work
                         </a>
                     </li>
                     <li className='transition-all motion-reduce:transition-none duration-500 delay-[200ms] translate-y-0 opacity-1'>
                         <a href='#contact'
-                        className='router-link-active router-link-exact-active block py-2 pl-3 pr-4 hover:text-[#4305ba]'>
+                        className={`block py-2 pl-3 pr-4 router-link-active router-link-exact-active hover:text-[#4305ba] ${
+                            activeNav === "#contact" ? "text-[#4305ba]" : ""
+                        }`}>
                             Contact
                         </a>
                     </li>
