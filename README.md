@@ -7,7 +7,7 @@
 
 # Demo :movie_camera:
 
-![](./src/assets/images/Demo.png)
+![](./src/assets/images/Demo.PNG)
 
 ## View live preview [here](https://omkar-potphode-portfolio-phi.vercel.app/)
 
