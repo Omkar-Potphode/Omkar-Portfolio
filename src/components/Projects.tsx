@@ -5,6 +5,8 @@ import AdminImg from '../assets/images/Admin-Panel.png';
 import NotesImg from '../assets/images/notes-app.png';
 import QuizImg from '../assets/images/Quiz-game.png';
 import DoOriginalsImg from '../assets/images/Do-Originals.png';
+import TinyTalkiesImg from '../assets/images/Tiny-Talkies.png';
+import FrameFireStudioImg from '../assets/images/Frame-Fire-Studio.png';
 
 const Projects: React.FC = () => {
   return (
@@ -24,6 +26,77 @@ const Projects: React.FC = () => {
             </div>
 
             <div className='flex flex-col mt-12 space-y-12 transition-all duration-500 delay-300 translate-y-0 motion-reduce:transition-none opacity-1 blur-0'>
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='flex flex-col space-y-4 text-left'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Tiny Talkies
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Developed a modern, sleek digital presence for Tiny Talkies, a premier video 
+                        production agency. Built with React and Tailwind CSS, the platform features a seamless, 
+                        responsive design with dynamic video integration, perfectly showcasing their 
+                        compelling brand stories and visual projects to clients.
+                        </p>
+                        <p className='text-slate-600'>React, Tailwind CSS, JavaScript</p>
+                        <div className='flex items-center space-x-6 text-slate-400'>
+                            <a href='https://tinytalkies.co.in/'
+                            target='_blank'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://tinytalkies.co.in/' target='_blank'>
+                            <img
+                            src={TinyTalkiesImg}
+                            alt='Tiny Talkies'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://framefirestudio.com/' target='_blank'>
+                            <img
+                            src={FrameFireStudioImg}
+                            alt='Frame Fire Studio'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Frame Fire Studio
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Engineered a visually stunning portfolio website for Frame Fire Studio, 
+                        a professional photography agency. Leveraging Next.js and modern styling frameworks, 
+                        the project highlights a bold, elegant design with fluid typography and interactive 
+                        image grids to beautifully showcase their diverse photography collections and moments.
+                        </p> 
+                        <p className='text-slate-600'>
+                            Next.js, Tailwind CSS, TypeScript
+                        </p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                            <a href='https://framefirestudio.com/'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            target='_blank'>
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
