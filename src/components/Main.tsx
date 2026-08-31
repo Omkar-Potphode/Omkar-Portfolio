@@ -16,27 +16,27 @@ const Main: React.FC = () => {
                 <ul className='flex items-center space-x-8 md:fixed md:bottom-0 mb-7 md:flex-col md:space-y-4 md:space-x-0'>
 
                     <li className='transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1'>
-                        <a href='https://github.com/Omkar-Potphode' target='_blank'> 
-                            <FaGithub className='w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin
-                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300'/>
+                        <a href='https://github.com/Omkar-Potphode' target='_blank' rel='noreferrer' aria-label='GitHub'> 
+                            <FaGithub className='w-8 h-8 text-slate-700 dark:text-slate-300 hover:text-[#4305ba] dark:hover:text-[#fa3205] transition duration-300 ease-out
+                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0'/>
                         </a>
                     </li>
                     <li className='transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1'>
-                        <a href='https://www.linkedin.com/in/omkar-potphode-497b63237/' target='_blank'>
-                            <FaLinkedin className='w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin
-                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300'/>
+                        <a href='https://www.linkedin.com/in/omkar-potphode-497b63237/' target='_blank' rel='noreferrer' aria-label='LinkedIn'>
+                            <FaLinkedin className='w-8 h-8 text-slate-700 dark:text-slate-300 hover:text-[#4305ba] dark:hover:text-[#fa3205] transition duration-300 ease-out
+                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0'/>
                         </a>
                     </li>
                     <li className='transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1'>
-                        <a href='https://twitter.com/OmkarP33836' target='_blank'>
-                            <FaXTwitter className='w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin
-                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300'/>
+                        <a href='https://twitter.com/OmkarP33836' target='_blank' rel='noreferrer' aria-label='Twitter'>
+                            <FaXTwitter className='w-8 h-8 text-slate-700 dark:text-slate-300 hover:text-[#4305ba] dark:hover:text-[#fa3205] transition duration-300 ease-out
+                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0'/>
                         </a>
                     </li>
                     <li className='transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1'>
-                        <a href='mailto:omkar03potphode@gmail.com' target='_blank'>
-                            <SiGmail className='w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin
-                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300'/>
+                        <a href='mailto:omkar03potphode@gmail.com' target='_blank' rel='noreferrer' aria-label='Email'>
+                            <SiGmail className='w-8 h-8 text-slate-700 dark:text-slate-300 hover:text-[#4305ba] dark:hover:text-[#fa3205] transition duration-300 ease-out
+                            md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0'/>
                         </a>
                     </li>
 
@@ -57,7 +57,7 @@ const Main: React.FC = () => {
                 <div className='flex-col flex-1 order-1 col-span-4 md:order-none'></div>
                 <div className='relative flex-initial order-2 hidden col-span-1 text-center md:flex md:order-none'>
                     <p className='fixed transition-all duration-500 origin-top-right rotate-90 translate-y-0 bottom-2 right-10
-                    motion-reduce:transition-none opacity-1'>
+                    motion-reduce:transition-none opacity-1 text-slate-600 dark:text-slate-400 font-mono text-sm'>
                         📍 Based in Thane, India
                     </p>
                 </div>

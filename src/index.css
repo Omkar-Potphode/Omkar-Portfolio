@@ -23,11 +23,15 @@ html{
   -webkit-tap-highlight-color: transparent;
 }
 
-/*Dark Mode*/
-@media (prefers-color-scheme: dark){
-  html{
-    background-color: rgb(15, 23, 42);
-  }
+/* Theme Styling */
+html {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+html.dark {
+  background-color: rgb(15, 23, 42);
+  color: rgb(203, 213, 225);
 }
 
 @layer utilities {

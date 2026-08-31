@@ -3,23 +3,17 @@ import './App.css'
 import {Loading, Main, Navbar} from './components'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
 
-function App() {
-
+function PortfolioApp() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const { theme } = useTheme();
 
-  useEffect(() =>{
-
-    //Simulate asynchronous initialization
-    const initializeApp =  async () =>{
-      try{
-        //Set loading to true before initialization
+  useEffect(() => {
+    const initializeApp = async () => {
+      try {
         setIsLoading(true);
-
-        //Simulate initialization process
         await new Promise((res) => setTimeout(res, 2000));
-
-        //Set loading to false after initialization
       } catch (err) {
         console.error("Error initializing App:", err);
       } finally {
@@ -31,21 +25,27 @@ function App() {
   }, []);
 
   return (
-    <>
-      <div className='min-h-screen text-base bg-white overscroll-contain 
-      dark:bg-slate-900 dark:text-slate-300 md:text-xl'>
-        {isLoading ? (
-          <Loading/>
-        ) : (
-          <>
-            <Navbar/>
-            <Main/>
-            <ToastContainer/>
-          </>
-        )}
-      </div>
-    </>
+    <div className='min-h-screen text-base bg-white text-slate-900 overscroll-contain transition-colors duration-300 dark:bg-slate-900 dark:text-slate-300 md:text-xl'>
+      {isLoading ? (
+        <Loading/>
+      ) : (
+        <>
+          <Navbar/>
+          <Main/>
+          <ToastContainer theme={theme === 'dark' ? 'dark' : 'light'} />
+        </>
+      )}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <PortfolioApp />
+    </ThemeProvider>
   );
 }
 
 export default App
+

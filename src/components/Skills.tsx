@@ -21,7 +21,7 @@ const Skills: React.FC = () => {
             In my skill set, I leverage a blend of innovative technologies and trusted open-source tools to develop user-centric, high-performing applications and websites. My focus lies in crafting seamless experiences tailored for smartphones, tablets, and desktops, ensuring optimal functionality and performance across all devices.
             </p>
 
-            <motion.div className='flex flex-wrap justify-between mt-8 text-sm font-medium text-black md:text-lg'>
+            <motion.div className='flex flex-wrap justify-between mt-8 text-sm font-medium text-slate-800 dark:text-slate-200 md:text-lg'>
                 {techStack.map((tech, index) => (
                     <motion.div 
                     key={index}
@@ -40,16 +40,16 @@ const Skills: React.FC = () => {
                     >
                         {/* Big Screen */}
                         <div className='items-center hidden px-4 py-2 mx-2 mt-6 rounded-lg cursor-pointer 
-                        md:flex w-52 bg-gray-50 md:m-4 hover:scale-125 md:w-48'>
-                            <img alt='' src={tech.link} className='w-12'/>
-                            <h4 className='ml-4 text-md'>{tech.name}</h4>
+                        md:flex w-52 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm md:m-4 hover:scale-105 transition-all duration-300 md:w-48'>
+                            <img alt={tech.name} src={tech.link} className='w-12'/>
+                            <h4 className='ml-4 text-md text-slate-800 dark:text-slate-200'>{tech.name}</h4>
                         </div>
 
                         {/* Small Screen */}
                         <div className='flex flex-col items-center w-32 px-4 py-2 mt-6 rounded-lg cursor-pointer
-                        md:hidden bg-gray-50 hover:scale-125'>
-                            <img alt='' src={tech.link} className='w-12'/>
-                            <h4 className='ml-4 text-md'>{tech.name}</h4>
+                        md:hidden bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:scale-105 transition-all duration-300'>
+                            <img alt={tech.name} src={tech.link} className='w-12'/>
+                            <h4 className='ml-4 text-md text-slate-800 dark:text-slate-200'>{tech.name}</h4>
                         </div>
 
                     </motion.div>

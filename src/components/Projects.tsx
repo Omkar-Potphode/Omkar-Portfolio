@@ -7,6 +7,8 @@ import QuizImg from '../assets/images/Quiz-game.png';
 import DoOriginalsImg from '../assets/images/Do-Originals.png';
 import TinyTalkiesImg from '../assets/images/Tiny-Talkies.png';
 import FrameFireStudioImg from '../assets/images/Frame-Fire-Studio.png';
+import WebinarImg from '../assets/images/Webinar-Registration.png';
+import DoReportsImg from '../assets/images/Do-Reports.png';
 
 const Projects: React.FC = () => {
   return (
@@ -20,27 +22,66 @@ const Projects: React.FC = () => {
                 </h1>
                 <div className='flex-grow border-t border-black dark:border-white border-1'></div>
                 <a href='https://github.com/Omkar-Potphode'
+                target='_blank'
+                rel='noreferrer'
                 className='pl-2 text-sm text-right sm:pl-5 hover:text-link-color'>
                     Visit Archive
                 </a>
             </div>
 
             <div className='flex flex-col mt-12 space-y-12 transition-all duration-500 delay-300 translate-y-0 motion-reduce:transition-none opacity-1 blur-0'>
+                
+                {/* 1. Do Reports */}
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://www.doreports.in/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={DoReportsImg}
+                            alt='Do Reports - AI Hyperlocal News Platform'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Do Reports – AI Hyperlocal News & Publishing Platform
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Architected and engineered an automated digital journalism and news publishing platform. Solved manual editorial bottlenecks by designing an intelligent content ingestion pipeline that aggregates regional RSS feeds, leverages LLM/AI workflows to synthesize, fact-check, and auto-publish real-time local news in regional languages (Marathi & English). Implemented dynamic caching, automated cron scheduling, SEO-optimized metadata, and a modern responsive UI for sub-second page performance.
+                        </p>
+                        <p className='text-slate-600 dark:text-slate-400'>Next.js, TypeScript, Tailwind CSS, AI/LLM Pipeline, RSS Automation, Node.js</p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                            <a href='https://www.doreports.in/'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 2. Webinar Registration Platform */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
-                            Tiny Talkies
+                            Webinar Registration Platform
                         </h3>
                         <p className='text-slate-500 dark:text-slate-300'>
-                        Developed a modern, sleek digital presence for Tiny Talkies, a premier video 
-                        production agency. Built with React and Tailwind CSS, the platform features a seamless, 
-                        responsive design with dynamic video integration, perfectly showcasing their 
-                        compelling brand stories and visual projects to clients.
+                        A conversion-focused webinar registration platform built from the ground up. 
+                        Designed and developed a high-converting landing page with online registration, 
+                        seamless Razorpay payment integration, responsive UI, and an automated user flow 
+                        tailored for a real client business.
                         </p>
-                        <p className='text-slate-600'>React, Tailwind CSS, JavaScript</p>
+                        <p className='text-slate-600 dark:text-slate-400'>Next.js, TypeScript, Tailwind CSS, Razorpay</p>
                         <div className='flex items-center space-x-6 text-slate-400'>
-                            <a href='https://tinytalkies.co.in/'
+                            <a href='https://masterclass.dooriginals.com/'
                             target='_blank'
+                            rel='noreferrer'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
                             >
                                 <span className='flex items-center space-x-2'>
@@ -50,7 +91,21 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
-                        <a href='https://tinytalkies.co.in/' target='_blank'>
+                        <a href='https://masterclass.dooriginals.com/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={WebinarImg}
+                            alt='Webinar Registration Platform'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                {/* 3. Tiny Talkies */}
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://tinytalkies.co.in/' target='_blank' rel='noreferrer'>
                             <img
                             src={TinyTalkiesImg}
                             alt='Tiny Talkies'
@@ -59,20 +114,34 @@ const Projects: React.FC = () => {
                             />
                         </a>
                     </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Tiny Talkies
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Developed a modern, sleek digital presence for Tiny Talkies, a premier video 
+                        production agency. Built with React and Tailwind CSS, the platform features a seamless, 
+                        responsive design with dynamic video integration, perfectly showcasing their 
+                        compelling brand stories and visual projects to clients.
+                        </p>
+                        <p className='text-slate-600 dark:text-slate-400'>React, Tailwind CSS, JavaScript</p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                            <a href='https://tinytalkies.co.in/'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
+                {/* 4. Frame Fire Studio */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
-                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
-                        <a href='https://framefirestudio.com/' target='_blank'>
-                            <img
-                            src={FrameFireStudioImg}
-                            alt='Frame Fire Studio'
-                            loading='lazy'
-                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
-                            />
-                        </a>
-                    </div>
-                    <div className='flex flex-col space-y-4 lg:text-right'>
+                    <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
                             Frame Fire Studio
                         </h3>
@@ -82,23 +151,45 @@ const Projects: React.FC = () => {
                         the project highlights a bold, elegant design with fluid typography and interactive 
                         image grids to beautifully showcase their diverse photography collections and moments.
                         </p> 
-                        <p className='text-slate-600'>
+                        <p className='text-slate-600 dark:text-slate-400'>
                             Next.js, Tailwind CSS, TypeScript
                         </p>
-                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                        <div className='flex items-center space-x-6 text-slate-400'>
                             <a href='https://framefirestudio.com/'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
-                            target='_blank'>
+                            target='_blank'
+                            rel='noreferrer'>
                                 <span className='flex items-center space-x-2'>
                                     <LuExternalLink className='h-7 w-7'/>
                                 </span>
                             </a>
                         </div>
                     </div>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://framefirestudio.com/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={FrameFireStudioImg}
+                            alt='Frame Fire Studio'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
                 </div>
 
+                {/* 5. DoOriginals */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
-                    <div className='flex flex-col space-y-4 text-left'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://www.dooriginals.com/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={DoOriginalsImg}
+                            alt='DoOriginals'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
                         <h3 className='pb-2 text-xl font-extrabold'>
                             DoOriginals
                         </h3>
@@ -109,10 +200,11 @@ const Projects: React.FC = () => {
                         providing an engaging experience for the community to explore impactful stories of 
                         leadership and social contribution.
                         </p>
-                        <p className='text-slate-600'>Next.js, Tailwind CSS, JavaScript</p>
-                        <div className='flex items-center space-x-6 text-slate-400'>
+                        <p className='text-slate-600 dark:text-slate-400'>Next.js, Tailwind CSS, JavaScript</p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
                             <a href='https://www.dooriginals.com/'
                             target='_blank'
+                            rel='noreferrer'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
                             >
                                 <span className='flex items-center space-x-2'>
@@ -121,30 +213,11 @@ const Projects: React.FC = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
-                        <a href='https://www.dooriginals.com/' target='_blank'>
-                            <img
-                            src={DoOriginalsImg}
-                            alt='DoOriginals'
-                            loading='lazy'
-                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
-                            />
-                        </a>
-                    </div>
                 </div>
 
+                {/* 6. Admin Panel */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
-                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
-                        <a href='https://react-admin-panel-amber.vercel.app/' target='_blank'>
-                            <img
-                            src={AdminImg}
-                            alt='Admin panel'
-                            loading='lazy'
-                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
-                            />
-                        </a>
-                    </div>
-                    <div className='flex flex-col space-y-4 lg:text-right'>
+                    <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
                             Admin Panel
                         </h3>
@@ -155,30 +228,53 @@ const Projects: React.FC = () => {
                         functionality across various devices. Empowered with powerful features, this project exemplifies 
                         a modern approach to administrative interfaces.
                         </p> 
-                        <p className='text-slate-600'>
+                        <p className='text-slate-600 dark:text-slate-400'>
                             React, Material UI, chart.js
                         </p>
-                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                        <div className='flex items-center space-x-6 text-slate-400'>
                             <a href='https://github.com/Omkar-Potphode/React-Admin-Panel'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
-                            target='_blank'>
+                            target='_blank'
+                            rel='noreferrer'>
                                 <span className='flex items-center space-x-2'>
                                     <FaGithub className='svg-inline--fa fa-github h-7 w-7'/>
                                 </span>
                             </a>
                             <a href='https://react-admin-panel-amber.vercel.app/'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
-                            target='_blank'>
+                            target='_blank'
+                            rel='noreferrer'>
                                 <span className='flex items-center space-x-2'>
                                     <LuExternalLink className='h-7 w-7'/>
                                 </span>
                             </a>
                         </div>
                     </div>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://react-admin-panel-amber.vercel.app/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={AdminImg}
+                            alt='Admin panel'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
                 </div>
 
+                {/* 7. Notes App */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
-                    <div className='flex flex-col space-y-4 text-left'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://notes-app-ty2x.vercel.app/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={NotesImg}
+                            alt='Notes App'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
                         <h3 className='pb-2 text-xl font-extrabold'>
                             Notes App
                         </h3>
@@ -189,10 +285,11 @@ const Projects: React.FC = () => {
                         and efficient storage management, it exemplifies the power of React in building practical 
                         applications tailored for everyday use.
                         </p>
-                        <p className='text-slate-600'>React, JavaScript, HTML, CSS</p>
-                        <div className='flex items-center space-x-6 text-slate-400'>
+                        <p className='text-slate-600 dark:text-slate-400'>React, JavaScript, HTML, CSS</p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
                             <a href='https://github.com/Omkar-Potphode/Notes-App'
                             target='_blank'
+                            rel='noreferrer'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
                             >
                                 <span className='flex items-center space-x-2'>
@@ -201,6 +298,45 @@ const Projects: React.FC = () => {
                             </a>
                             <a href='https://notes-app-ty2x.vercel.app/'
                             target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 8. Quiz Game */}
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='flex flex-col space-y-4 text-left'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Quiz Game
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Crafted an engaging quiz game project using HTML, CSS, and JavaScript, 
+                        offering interactive entertainment and educational value. Seamlessly blending 
+                        design and functionality, this project showcases dynamic question generation, 
+                        responsive layout, and intuitive user interface.
+                        </p>
+                        <p className='text-slate-600 dark:text-slate-400'>
+                            HTML, CSS, JavaScript
+                        </p>
+                        <div className='flex items-center space-x-6 text-slate-400'>
+                            <a href='https://github.com/Omkar-Potphode/Quiz_Game'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <FaGithub className='svg-inline--fa fa-github h-7 w-7'/>
+                                </span>
+                            </a>
+                            <a href='https://quiz-game-xi-gilt.vercel.app/'
+                            target='_blank'
+                            rel='noreferrer'
                             className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
                             >
                                 <span className='flex items-center space-x-2'>
@@ -210,20 +346,9 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
-                        <a href='https://notes-app-ty2x.vercel.app/' target='_blank'>
-                            <img
-                            src={NotesImg}
-                            alt='Notes App'
-                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
-                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
                         <a href='https://quiz-game-xi-gilt.vercel.app/'
                         target='_blank'
+                        rel='noreferrer'
                         >
                             <img
                             src={QuizImg}
@@ -233,45 +358,12 @@ const Projects: React.FC = () => {
                             />
                         </a>
                     </div>
-                    <div className='flex flex-col space-y-4 lg:text-right'>
-                        <h3 className='pb-2 text-xl font-extrabold'>
-                            Quiz Game
-                        </h3>
-                        <p className='text-slate-500 dark:text-slate-300'>
-                        "Crafted an engaging quiz game project using HTML, CSS, and JavaScript, 
-                        offering interactive entertainment and educational value. Seamlessly blending 
-                        design and functionality, this project showcases dynamic question generation, 
-                        responsive layout, and intuitive user interface. Designed with simplicity and 
-                        elegance, it exemplifies creativity and technical proficiency in web development."
-                        </p>
-                        <p className='text-slate-600'>
-                            HTML, CSS, JavaScript
-                        </p>
-                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
-                            <a href='https://github.com/Omkar-Potphode/Quiz_Game'
-                            target='_blank'
-                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
-                            >
-                                <span className='flex items-center space-x-2'>
-                                    <FaGithub className='svg-inline--fa fa-github h-7 w-7'/>
-                                </span>
-                            </a>
-                            <a href='https://quiz-game-xi-gilt.vercel.app/'
-                            target='_blank'
-                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
-                            >
-                                <span className='flex items-center space-x-2'>
-                                    <LuExternalLink className='h-7 w-7'/>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
-                <button className='px-6 py-2 mx-auto mt-10 block transition duration-300 ease-in-out bg-transparent border shadow-sm
+                <button className='px-6 py-2 mx-auto mt-10 block transition duration-300 ease-in-out bg-transparent border shadow-sm rounded-md
                             border-button-color shadow-button-color text-button-color hover:bg-button-color hover:text-white 
-                            hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:text-white'>
-                    <a href='https://github.com/Omkar-Potphode' target='_blank'>
+                            hover:dark:text-white focus:bg-button-color focus:text-white active:text-white font-medium'>
+                    <a href='https://github.com/Omkar-Potphode' target='_blank' rel='noreferrer'>
                         Show More
                     </a>
                 </button>

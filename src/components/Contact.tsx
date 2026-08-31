@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { TbMailForward } from 'react-icons/tb';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTheme } from '../context/ThemeContext';
 
 
 interface InputState{ 
@@ -18,6 +19,7 @@ interface ErrorState{
 }
 
 const Contact: React.FC = () => {
+    const { theme } = useTheme();
 
     const [input, setInput] = useState<InputState>({
         name: '',
@@ -67,7 +69,7 @@ const Contact: React.FC = () => {
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
-                    theme: "dark",
+                    theme: theme === "dark" ? "dark" : "light",
                 });
                 setInput({
                     name: '',
@@ -81,7 +83,7 @@ const Contact: React.FC = () => {
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: false,
-                theme: "dark",
+                theme: theme === "dark" ? "dark" : "light",
             });
         }
     };
@@ -107,14 +109,13 @@ const Contact: React.FC = () => {
 
             <div className='flex flex-col transition-opacity mt-5 duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1 gap-12'>
 
-                <div className='max-w-3xl text-white rounded-lg border-4 border-slate-300 p-4 lg:p-5'>
+                <div className='max-w-3xl rounded-lg border-2 border-slate-300 dark:border-slate-700 p-4 lg:p-6 bg-slate-50/50 dark:bg-slate-800/50 backdrop-blur-sm'>
                     <form>
-                        <div className='mt-6 flex flex-col gap-6'></div>
+                        <div className='mt-2 flex flex-col gap-6'></div>
                         <div className="flex flex-col gap-2 mb-5">
-                            <label className="text-slate-500 dark:text-slate-300">Your Name: </label>
+                            <label className="text-slate-700 dark:text-slate-300 font-medium">Your Name: </label>
                             <input
-                            className="bg-white text-slate-500 w-full border-2 rounded-md border-slate-300 focus:border-[#4305ba] ring-0 outline-0 transition-all duration-300 px-3 py-2
-                            dark:bg-slate-600 dark:text-slate-200"
+                            className="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-100 w-full border-2 rounded-md border-slate-300 dark:border-slate-600 focus:border-[#4305ba] dark:focus:border-[#fa3205] ring-0 outline-0 transition-all duration-300 px-3 py-2"
                             type="text"
                             required={true}
                             onChange={(e) => setInput({ ...input, name: e.target.value })}
@@ -124,10 +125,9 @@ const Contact: React.FC = () => {
                         </div>       
 
                         <div className="flex flex-col gap-2 mb-5">
-                            <label className="text-slate-500 dark:text-slate-300">Your mail: </label>
+                            <label className="text-slate-700 dark:text-slate-300 font-medium">Your mail: </label>
                             <input
-                            className="bg-white text-slate-500 w-full border-2 rounded-md border-slate-300 focus:border-[#4305ba] ring-0 outline-0 transition-all duration-300 px-3 py-2
-                            dark:bg-slate-600 dark:text-slate-200"
+                            className="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-100 w-full border-2 rounded-md border-slate-300 dark:border-slate-600 focus:border-[#4305ba] dark:focus:border-[#fa3205] ring-0 outline-0 transition-all duration-300 px-3 py-2"
                             type="text"
                             required={true}
                             onChange={(e) => setInput({ ...input, email: e.target.value })}
@@ -137,11 +137,11 @@ const Contact: React.FC = () => {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <label className="text-slate-500 dark:text-slate-300">Your Message: </label>
+                            <label className="text-slate-700 dark:text-slate-300 font-medium">Your Message: </label>
                             <textarea
-                            className="bg-white text-slate-500 w-full border-2 rounded-md border-slate-300 focus:border-[#4305ba] ring-0 outline-0 transition-all duration-300 px-3 py-2
-                            dark:bg-slate-600 dark:text-slate-200"
+                            className="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-100 w-full border-2 rounded-md border-slate-300 dark:border-slate-600 focus:border-[#4305ba] dark:focus:border-[#fa3205] ring-0 outline-0 transition-all duration-300 px-3 py-2"
                             name="message"
+                            rows={4}
                             required={true}
                             onChange={(e) => setInput({ ...input, message: e.target.value })}
                             onBlur={checkRequired}
@@ -155,9 +155,9 @@ const Contact: React.FC = () => {
                             </p>
                             }
                         <button
-                        className="mt-5 flex items-center gap-4 px-6 py-2 transition duration-300 ease-in-out bg-transparent border shadow-sm
+                        className="mt-5 flex items-center gap-4 px-6 py-2.5 transition duration-300 ease-in-out bg-transparent border shadow-sm rounded-md
                         border-button-color shadow-button-color text-button-color hover:bg-button-color hover:text-white 
-                        hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:text-white "
+                        hover:dark:text-white focus:bg-button-color focus:text-white active:text-white font-medium"
                         role="button"
                         onClick={handleSendMail}
                         >
