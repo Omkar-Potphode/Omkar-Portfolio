@@ -9,6 +9,8 @@ import TinyTalkiesImg from '../assets/images/Tiny-Talkies.png';
 import FrameFireStudioImg from '../assets/images/Frame-Fire-Studio.png';
 import WebinarImg from '../assets/images/Webinar-Registration.png';
 import DoReportsImg from '../assets/images/Do-Reports.png';
+import SamarthImg from '../assets/images/Samarth-Corporation.png';
+import PMPropertiesImg from '../assets/images/PM-Properties.png';
 
 const Projects: React.FC = () => {
   return (
@@ -31,7 +33,75 @@ const Projects: React.FC = () => {
 
             <div className='flex flex-col mt-12 space-y-12 transition-all duration-500 delay-300 translate-y-0 motion-reduce:transition-none opacity-1 blur-0'>
                 
-                {/* 1. Do Reports */}
+                {/* 1. PM Properties */}
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://www.thepmproperties.in/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={PMPropertiesImg}
+                            alt='PM Properties - Real Estate Consultancy & Property Platform'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                    <div className='flex flex-col space-y-4 lg:text-right'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            PM Properties – Real Estate Consultancy & Intelligent Property Platform
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Built a lead-generation platform for PM Properties, a MahaRERA-certified real estate consultancy. It features multi-parameter property filters (budget, locality, developer), RERA verification badges, and quick consultation booking. A secure, passcode-protected Admin Console on Supabase provides a full CMS with real-time lead tracking and inquiry metrics. Technical SEO and AI SEO (GEO) with RealEstateAgent and FAQPage JSON-LD schemas help it rank in local search and AI answer engines.
+                        </p>
+                        <p className='text-slate-600 dark:text-slate-400'>React, Tailwind CSS, Supabase, Technical SEO</p>
+                        <div className='flex items-center space-x-6 text-slate-400 justify-end'>
+                            <a href='https://www.thepmproperties.in/'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 2. Samarth Corporation */}
+                <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
+                    <div className='flex flex-col space-y-4 text-left'>
+                        <h3 className='pb-2 text-xl font-extrabold'>
+                            Samarth Corporation – Industrial FRP Manufacturing & B2B Engineering Platform
+                        </h3>
+                        <p className='text-slate-500 dark:text-slate-300'>
+                        Engineered a conversion-focused B2B lead-generation website for Samarth Corporation, an industrial FRP and composite manufacturer. The responsive platform features interactive product showcases, a client credibility marquee, and a fast RFQ inquiry flow, backed by multi-location Schema.org JSON-LD, geo-targeted local SEO, and Core Web Vitals optimization to rank higher in industrial search results.
+                        </p>
+                        <p className='text-slate-600 dark:text-slate-400'>React, Tailwind CSS, JavaScript, Technical SEO</p>
+                        <div className='flex items-center space-x-6 text-slate-400'>
+                            <a href='https://www.samarthcorporation.co/'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color'
+                            >
+                                <span className='flex items-center space-x-2'>
+                                    <LuExternalLink className='h-7 w-7'/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
+                        <a href='https://www.samarthcorporation.co/' target='_blank' rel='noreferrer'>
+                            <img
+                            src={SamarthImg}
+                            alt='Samarth Corporation - Industrial FRP Manufacturing & Engineering'
+                            loading='lazy'
+                            className='mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105'
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                {/* 3. Do Reports */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
                         <a href='https://www.doreports.in/' target='_blank' rel='noreferrer'>
@@ -48,9 +118,9 @@ const Projects: React.FC = () => {
                             Do Reports – AI Hyperlocal News & Publishing Platform
                         </h3>
                         <p className='text-slate-500 dark:text-slate-300'>
-                        Architected and engineered an automated digital journalism and news publishing platform. Solved manual editorial bottlenecks by designing an intelligent content ingestion pipeline that aggregates regional RSS feeds, leverages LLM/AI workflows to synthesize, fact-check, and auto-publish real-time local news in regional languages (Marathi & English). Implemented dynamic caching, automated cron scheduling, SEO-optimized metadata, and a modern responsive UI for sub-second page performance.
+                        Engineered an automated news publishing platform that removes manual editorial bottlenecks. An ingestion pipeline aggregates regional RSS feeds, and LLM workflows synthesize, verify, and auto-publish local news in Marathi and English. Cron-based scheduling, dynamic caching, and SEO-optimized metadata keep the content fresh and the responsive UI fast.
                         </p>
-                        <p className='text-slate-600 dark:text-slate-400'>Next.js, TypeScript, Tailwind CSS, AI/LLM Pipeline, RSS Automation, Node.js</p>
+                        <p className='text-slate-600 dark:text-slate-400'>React, Node.js, LLM/AI APIs, RSS, Cron Jobs</p>
                         <div className='flex items-center space-x-6 text-slate-400 justify-end'>
                             <a href='https://www.doreports.in/'
                             target='_blank'
@@ -65,7 +135,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 2. Webinar Registration Platform */}
+                {/* 4. Webinar Registration Platform */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
@@ -102,7 +172,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 3. Tiny Talkies */}
+                {/* 5. Tiny Talkies */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
                         <a href='https://tinytalkies.co.in/' target='_blank' rel='noreferrer'>
@@ -139,7 +209,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 4. Frame Fire Studio */}
+                {/* 6. Frame Fire Studio */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
@@ -177,7 +247,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 5. DoOriginals */}
+                {/* 7. DoOriginals */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
                         <a href='https://www.dooriginals.com/' target='_blank' rel='noreferrer'>
@@ -215,7 +285,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 6. Admin Panel */}
+                {/* 8. Admin Panel */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
@@ -262,7 +332,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 7. Notes App */}
+                {/* 9. Notes App */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='order-first pb-4 lg:pb-0 lg:order-none lg:block'>
                         <a href='https://notes-app-ty2x.vercel.app/' target='_blank' rel='noreferrer'>
@@ -309,7 +379,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 8. Quiz Game */}
+                {/* 10. Quiz Game */}
                 <div className='flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1'>
                     <div className='flex flex-col space-y-4 text-left'>
                         <h3 className='pb-2 text-xl font-extrabold'>
